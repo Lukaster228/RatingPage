@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background-color: black;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-div-el {
+    display: flex;
+    padding: 35px;
+    width: 450px;
+    background: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+    border-radius: 30px;
+}
+
+#inner-dontent-div-el {
+    width: 100%;
+}
+
+#button-with-img-el {
+    border: none;
+    padding: 10px 10px 5px 10px;
+    border-radius: 50%;
+    background-color: hsl(210, 2%, 33%);
+}
+
+#question-txt-div {
+    margin-top: 30px;
+}
+
+#question-txt-el {
+    font-weight: 700;
+    color: white;
+    font-size: 30px;
+}
+
+#main-txt-container-div {
+    margin-top: 30px;
+    width: 380px;
+}
+
+#main-txt-el {
+    color: hsl(217, 16%, 53%);
+}
+
+#marks-content-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.mark-el {
+    padding: 15px 22px;
+    border: none;
+    border-radius: 50%;
+    background-color: hsl(180, 2%, 19%);
+    color: hsl(217, 16%, 53%);
+    font-size: 15px;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.mark-el:hover {
+    background-color: gray !important;
+    color: white !important;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}   
+
+#submit-container-div {
+    margin-top: 30px;
+}
+
+#submit-btn-el {
+    color: white;
+    font-size: 17px;
+    border: none;
+    width: 100%;
+    border-radius: 30px;
+    padding: 13px 0;
+    background-color: orange;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+#submit-btn-el:hover {
+    color: orange;
+    background-color: white;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+@media (max-width: 500px) {
+    #main-div-el {
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width: 385px) {
+    #main-div-el {
+        width: 350px;
+    }
+
+    #main-txt-container-div {
+        width: 100%;
+    }
+}
