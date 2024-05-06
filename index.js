@@ -69,3 +69,5 @@ submitBtnEl.addEventListener("click", function() {
         bottomRowEl.style.margin = "20px auto 0 auto";
     }
 });
+
+//06.05.2024
